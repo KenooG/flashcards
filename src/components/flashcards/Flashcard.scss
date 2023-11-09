@@ -1,3 +1,14 @@
+@keyframes showInnerCard{
+  from{opacity:0
+  }
+
+
+  to{opacity: 1}
+
+}
+
+
+
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -15,9 +26,21 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.flip-card-reveal .flip-card-inner {
-  transform: rotateY(180deg);
+
+.flip-card-inner{
+  p {
+    opacity: 0;
+
+  }
+
 }
+
+.flip-card-reveal .flip-card-inner, {
+  transform: rotateY(180deg);
+
+}
+
+
 
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -28,6 +51,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+
 }
 
 .flip-card-front {
@@ -39,4 +64,13 @@
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+  flex-wrap: wrap;
+  div{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-self: flex-end;
+
+
+  }
 }
