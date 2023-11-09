@@ -48,7 +48,7 @@
       "id": 3,
       "question": "Jak w HTML wstawić obrazek responsywny?",
       "answer": "Znacznik img z atrybutem srcset lub znacznik picture",
-      "setId" : 3
+      "setId" : 1
     }
 
 
